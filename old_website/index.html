@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JS8Call - A weak signal keyboard-to-keyboard messaging mode for amateur radio built on JS8.">
+    <meta name="author" content="Jordan Sherer, KN4CRD">
+    <meta name="keywords" content="JS8Call, JS8, FT8, amateur radio, ham radio, weak signal, HF, digital mode, WSJT">
+
+    <meta property="og:title" content="JS8Call">
+    <meta property="og:description" content="A weak signal keyboard-to-keyboard messaging mode for amateur radio built on JS8.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://js8call.com">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="JS8Call">
+    <meta name="twitter:description" content="A weak signal keyboard-to-keyboard messaging mode for amateur radio built on JS8.">
+
+    <link rel="canonical" href="https://js8call.com">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="//favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="//favicon-32x32.png">
+
+    <title>JS8Call - A weak signal keyboard-to-keyboard messaging mode for amateur radio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1em;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .features {
+            list-style: none;
+        }
+
+        .features li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .features li:before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+        }
+
+        .links-list {
+            list-style: none;
+        }
+
+        .links-list li {
+            margin-bottom: 10px;
+        }
+
+        .links-list ul {
+          padding-left:2rem;
+          margin:1rem;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #0066cc;
+            color: #fff;
+            padding: 12px 24px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #0055aa;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JS8Call</h1>
+        <p class="subtitle">Weak signal keyboard-to-keyboard messaging for ham radio</p>
+    </header>
+
+    <section>
+      <img src="images/screenshot.png" alt="JS8Call application screenshot" style="width:100%; margin-top:20px;">
+    </section>
+
+    <section>
+      <p>JS8Call <a href="https://widefido.wistia.com/medias/7bb1uq62ga" target="_blank" rel="noopener">started as an experiment</a> in combining the robustness of FT8 (a weak-signal mode by K1JT) with a messaging and network protocol layer for weak signal communication.</p>
+      <p>The open source software is designed for connecting amateur radio operators who are operating under weak signal conditions and offers real-time keyboard-to-keyboard messaging, stored (inbox) messaging, message relay, and automatic station announcements.</p>
+      <p>JS8Call is heavily inspired by <a href="https://wsjt.sourceforge.io/wsjtx.html" target="_blank" rel="noopener">WSJT-X</a>, <a href="https://www.w1hkj.org/" target="_blank" rel="noopener">Fldigi</a>, and <a href="http://fsqcall.org/" target="_blank" rel="noopener">FSQCall</a> and would not exist without the hard work and dedication of the many developers in the amateur radio community.</p>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <ul class="features">
+            <li>Weak signal communication down to -24dB SNR</li>
+            <li>Keyboard-to-keyboard messaging and QSOs</li>
+            <li>Store and forward messaging via relays</li>
+            <li>Automatic station spotting via APRS-IS</li>
+            <li>Heartbeat and CQ monitoring</li>
+            <li>Multi-speed modes: Slow, Normal, Fast, Turbo</li>
+            <li>Cross-platform: Windows, macOS, Linux</li>
+            <li>Free and open source (GPLv3)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Resources</h2>
+        <ul class="links-list">
+          <li><span>Source:</span>
+            <ul>
+                <li>Original Repository: <a href="https://github.com/js8call/js8call" target="_blank" rel="noopener">js8call</a></li>
+                <li>Continued development after 2025: <a href="https://github.com/JS8Call-improved/JS8Call-improved" target="_blank" rel="noopener">JS8Call-improved</a></li>
+            </ul>
+          </li>
+          <li>Downloads:</span>
+            <ul>
+              <li><a href="https://github.com/js8call/js8call/releases" target="_blank" rel="noopener">Version 2.3.1</a></li>
+              <li><a href="https://github.com/JS8Call-improved/JS8Call-improved/releases/latest/" target="_blank" rel="noopener">Versions 2.4 and later</a></li>
+            </ul>
+          </li>
+          <li>Groups.io: <a href="https://groups.io/g/js8call" target="_blank" rel="noopener">JS8Call Discussion Group</a></li>
+          <li>Documentation: <a href="downloads/JS8Call_User_Guide.pdf" target="_blank" rel="noopener">JS8Call User Guide</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>About</h2>
+        <p>JS8Call was originally developed by <a href="https://jordansherer.com" target="_blank" rel="noopener">Jordan Sherer, KN4CRD</a> and now includes a community of developers, including W6BAZ, K0OG, AC9KH and more. The software has received multiple awards including the 2020 Hamvention Technical Achievement Award and the 2021 Amateur Radio Software Award.</p>
+    </section>
+
+    <footer>
+        <p>73 de KN4CRD</p>
+    </footer>
+
+</body>
+</html>

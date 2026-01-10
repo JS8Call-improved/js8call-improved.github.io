@@ -1,0 +1,203 @@
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+.roboto-slab {
+    font-family: "Roboto Slab", serif;
+    /*font-optical-sizing: auto;*/
+    /*font-weight: <weight>;*/
+    font-style: normal;
+}
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+.roboto {
+    font-family: "Roboto", sans-serif;
+    /*font-optical-sizing: auto;*/
+    /*font-weight: <weight>;*/
+    font-style: normal;
+    /*font-variation-settings: "wdth" 100;*/
+}
+/* <weight>: Use a value from 400 to 700 */
+/* <uniquifier>: Use a unique and descriptive class name */
+.kode-mono {
+    font-family: "Kode Mono", monospace;
+    /*font-optical-sizing: auto;*/
+    /*font-weight: <weight>;*/
+    font-style: normal;
+}
+
+/* Full-screen fixed background video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;       /* Ensures full coverage with cropping */
+    z-index: -1;             /* Sends video behind everything */
+    background: black;       /* Fallback background */
+}
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2); /* 0.1 = 90% opacity video */
+    z-index: 0;
+}
+.menu {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    box-sizing: border-box;
+    gap: 24px;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+/* Welcome Outer div */
+.welcome-outer-box {
+    width: 100%;
+    height: 740px;
+    position: relative;
+    display: flex;
+    justify-content: center;     /* center left & right */
+    align-items: center;         /* center up & down */
+}
+/* Welcome Inner div */
+.welcome-inner-box {
+    width: 900px;
+    height: 410px;
+    background-color: rgba(242, 242, 255, 0.8); /* 70% opacity */
+    /*border-radius: 10px; /* optional */
+    box-sizing:border-box;
+    padding:40px;
+    color:#000000;
+    backdrop-filter:blur(6px);
+}
+.features-outer-box {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;     /* center left & right */
+}
+.features-inner-box {
+    width: 1080px;
+    margin: 0 auto;
+    height: auto;
+    padding:40px;
+    color: #666;
+}
+/* Sample content styling */
+.ending-message {
+    /*width: 100%;*/
+    color: #ccc;
+    position: relative;
+    text-align: right;
+    z-index: 1;
+    padding: 0px 60px 30px 0px;
+}
+div.video-box{
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Vertically center align-items */
+    gap: 40px; /* Spacing between the video and the text */
+}
+.video-box > video {
+    flex-shrink: 0; /* Prevent iframe from shrinking */
+    width: 480px; /* Optional, since width/height are set in HTML */
+    height: 270px; /* Optional, since width/height are set in HTML */
+}
+.video-box > iframe {
+    border: 0;
+    flex-shrink: 0; /* Prevent iframe from shrinking */
+    width: 360px; /* Optional, since width/height are set in HTML */
+    height: 203px; /* Optional, since width/height are set in HTML */
+    box-shadow: 8px 8px 20px #888888;
+    margin: 12px 12px 12px 0;
+}
+.video-box img {
+    border: 0;
+    flex-shrink: 0; /* Prevent iframe from shrinking */
+    align-items: center; /* Vertically center align-items */
+    width: 360px; /* Optional, since width/height are set in HTML */
+    height: 203px; /* Optional, since width/height are set in HTML */
+    box-shadow: 8px 8px 20px #888888;
+    margin: 12px 12px 12px 0;
+}
+.video-text-18{
+    color: #183871;
+    flex: 1; /* Takes up the remaining space */
+    text-align: left; /* Ensures text is left-justified */
+}
+.video-text-44{
+    color: #444444;
+    flex: 1; /* Takes up the remaining space */
+    text-align: left; /* Ensures text is left-justified */
+}
+.tools {
+    /* border: 1px solid black; */
+    display: block;
+    justify-content: center;     /* center left & right */
+    align-items: center;         /* center up & down */
+    text-align: left; /* Ensures text is left-justified */
+}
+.tools-blockquote {
+     font-family: monospace;
+    font-size: 14px;
+    display: flex;
+        background-color: #EEEEEE;
+        border-left-color: #FFA500;
+        border-left-style: solid;
+        border-left-width: 12px;
+        padding: 20px;
+        max-width: 700px;
+        box-shadow: 8px 8px 20px #888888;
+}
+.tools img{
+    border: 0;
+    flex-shrink: 0; /* Prevent iframe from shrinking */
+    align-items: center; /* Vertically center align-items */
+    width: 640px; /* Optional, since width/height are set in HTML */
+}
+.tools-text-18 {
+    color: #183871;
+    flex: 1; /* Takes up the remaining space */
+    text-align: left; /* Ensures text is left-justified */
+}
+.tools-text-44{
+    color: #444444;
+    flex: 1; /* Takes up the remaining space */
+    text-align: left; /* Ensures text is left-justified */
+}
+.shadow { box-shadow: 8px 8px 20px #888888; margin: 0px; }
+.radius-shadow { box-shadow: 8px 8px 20px #888888; border-radius: 12px; }
+.center-image {
+    display: block;      /* REQUIRED for margin:auto centering */
+    margin: 0 auto;      /* centers horizontally */
+}
+.alert { color: #aa0033; font-weight: bold }
+html, body { font-family: Roboto, system-ui, -apple-system, sans-serif; font-weight: 400; font-style: normal; font-size: 16px; color: #202020; margin: 0; padding: 0; width: 100%; height: 100%; }
+h1 { font-family: "Roboto Slab", sans-serif;  font-weight: 900; }
+h2 { font-family: "Roboto Slab", sans-serif;  font-weight: 900; }
+h3 { font-family: "Roboto Slab", sans-serif;  font-weight: 900; }
+blockquote { font-family: "Kode Mono", monospace; color: #000000; background-color: #EEEEEE;  border-left-color: #FFA500; border-left-style: solid; border-left-width: 12px; padding: 20px; width: auto; max-width: 700px; box-shadow: 8px 8px 20px #888888;}
+
+table { border-collapse: collapse; border: 1px solid #DDD; }
+th { text-align: left; vertical-align: middle; padding: 8px; background-color: #336699; color: #FFF; }
+td { vertical-align: middle; padding: 12px 30px 12px 12px; border-bottom: 1px solid #DDD;}
+
+.green .banner { background-color: #385C30; color: #fff; font-weight: 700; padding: 20px; margin-bottom: 36px; }
+.green h1 { color: #385C30; }
+.green h2 { color: #385C30; }
+.green h3 { color: #385C30; }
+.blue .banner { background-color: #375487; color: #fff; font-weight: 700; padding: 20px; margin-bottom: 36px; }
+.blue h1 { color: #375487; }
+.blue h2 { color: #375487; }
+.blue h3 { color: #375487; }
+.purple .banner { background-color: #5521A3; color: #fff; font-weight: 700; padding: 20px; margin-bottom: 36px; }
+.purple h1 { color: #5521A3; }
+.purple h2 { color: #5521A3; }
+.purple h3 { color: #5521A3; }
