@@ -116,7 +116,24 @@ position: relative;
     <p>We appreciate the community’s patience and continued support as the project evolves. Our goal remains to maintain clarity, continuity, and transparency while advancing JS8Call’s development.</p>
 
     <div>
-    <h2>Major Features For The 2.5.1 Release</h2>
+     <div><h2>What's New in Version 2.5.1</h2>
+    <p>Version 2.5.1 is a patch release that improves theme compatibility and user experience in the Configuration dialog.</p>
+    <p><b>Dark Mode Compatibility Fix</b></p>
+    <p>This release resolves an issue where the Configuration dialog did not display correctly when using dark desktop themes, particularly on Linux systems. The previous version used hardcoded background colors that conflicted with system theme settings, resulting in poor readability and visual inconsistencies.</p>
+    <p><b>Changes include</b>:</p>
+    <ul>
+        <li>Removed hardcoded background colors that interfered with dark themes</li>
+        <li>Removed custom styling from the saved messages list that caused display issues</li>
+        <li>The UI now properly respects your system's color scheme</li>
+    </ul>
+    <p><b>Improved Configuration Validation</b></p>
+    <p>We've added visual feedback to help ensure your station is properly configured:</p>
+    <ul>
+    <li>The Callsign and Grid fields now display a warning icon when empty</li>
+    <li>Hovering over the icon shows a tooltip indicating the field is required</li>
+    <li>The warning automatically disappears once you enter valid information</li>
+    </ul>
+    <p>This makes it easier to spot missing configuration at a glance.</p><h2>Major Features For The 2.5.0 Release</h2>
     <ul>
         <li>WSJT-X UDP Protocol Support - Added WSJT-X UDP protocol reporting support for better integration with logging software</li>
         <li>User Guide - Added comprehensive JS8Call User Guide to Help menu (PDF and editable .docx source)</li>
