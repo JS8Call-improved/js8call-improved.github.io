@@ -41,6 +41,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/default.css">
 
     <!-- Google Fonts -->
@@ -57,6 +58,9 @@
         gtag('js', new Date());
         gtag('config', 'G-K2ZYW3ZFTG');
     </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 
 <body><!-- Logo -->
@@ -75,67 +79,84 @@ position: relative;
         <!-- Logo goes here -->
         <!-- <img src="img/logo.png" alt="JS8Call-Improved Logo" style="height:60px;"> -->
     </div>
-    <div class="menu" style="background-color: #e0e0e0">
-        <a href="./" style="text-decoration:none; color: #000000;">Home</a>
-        <a href="./downloads.html" style="text-decoration:none; color: #000000;">Downloads</a>
-        <a href="./training.html" style="text-decoration:none; color:#000000;"><strong
-                style="color: darkblue;">Training</strong></a>
-        <a href="./tools.html" style="text-decoration:none; color:#000000;">Tools</a>
-        <a href="JS8Call-improved" style="text-decoration:none; color:#000000;">Code Resources</a>
-        <a href="https://js8call.groups.io" style="text-decoration:none; color:#000000;">Forum</a>
+<div class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="./">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./downloads.html">Downloads</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./training.html">Training</a></li>
+                <li class="nav-item"><a class="nav-link" href="./tools.html">Tools</a></li>
+                <li class="nav-item"><a class="nav-link" href="JS8Call-improved">Code Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://js8call.groups.io">Forum</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="features-outer-box">
-        <div class="features-inner-box">
-
-            <div class="blue">
+</div>
+<div class="container-lg content-container blue">
+    <div class="row">
+        <div class="col" id="features">
+            <h1>Training</h1>
 
                 <div class="banner shadow">These Videos Feature Version 2.2.0, But The Instructions Are The Same For
                     Version 2.3.0 And Above</div>
-                <div class="video-box">
-                    <a href="https://www.youtube.com/watch?v=XZPfBNgn-P0" target="_blank" rel="noopener noreferrer"><img
-                            src="img/js8call_vid1_jjs_2025-12.png" class="shadow-video"></a>
-                    <!--<iframe src="https://www.youtube.com/embed/XZPfBNgn-P0" title="JS8Call Vid 1 | Introduction, Install, Configure, First Tour" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                    <div>
+
+                <div class="row gx-5 video-box">
+                    <div class="col-xs-12 col-md-6 col-lg-5">
+                        <a href="https://www.youtube.com/watch?v=XZPfBNgn-P0" target="_blank" rel="noopener noreferrer"><img
+                                src="img/js8call_vid1_jjs_2025-12.png" class="img-fluid mb-5 mb-md-0"></a>
+                        <!--<iframe src="https://www.youtube.com/embed/XZPfBNgn-P0" title="JS8Call Vid 1 | Introduction, Install, Configure, First Tour" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-7">
                         <h2 class="video-text-18">JS8Call Vid 1 | Introduction, Install, Configure, First Tour</h2>
                         <p class="video-text-44">Get started with JS8Call in this introductory tutorial by John Jacob
                             Schmidt. You'll learn how to download, install, and configure the software, while gaining an
                             understanding of its strengths, limitations, and standout features. The video also covers
                             settings optimized for <a href="https://amrron.com/">AmRRON</a> radio operators.</p>
-                        <p class="video-text-18"><span class="alert">Note:</span> This is a 38 minute video.</p>
+                        <p class="video-text-18"><span class="text-alert">Note:</span> This is a 38 minute video.</p>
                     </div>
                 </div>
                 <hr>
-                <div class="video-box">
-                    <a href="https://www.youtube.com/watch?v=koi3hA--YMw" target="_blank" rel="noopener noreferrer"><img
-                            src="img/js8call_vid2_jjs_2025-12.png"></a>
-                    <!--<iframe src="https://www.youtube.com/embed/XZPfBNgn-P0" title="JS8Call Vid 1 | Introduction, Install, Configure, First Tour" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                    <div>
+                <div class="row gx-5 video-box">
+                    <div class="col-xs-12 col-md-6 col-lg-5">
+                        <a href="https://www.youtube.com/watch?v=koi3hA--YMw" target="_blank" rel="noopener noreferrer"><img
+                                src="img/js8call_vid2_jjs_2025-12.png" class="img-fluid mb-5 mb-md-0"></a>
+                        <!--<iframe src="https://www.youtube.com/embed/XZPfBNgn-P0" title="JS8Call Vid 1 | Introduction, Install, Configure, First Tour" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-7">
                         <h2 class="video-text-18">JS8Call Vid 2 | Operation & Features</h2>
                         <p class="video-text-44">In this video, John Jacob Schmidt demonstrates JS8Call's core operating
                             features, including messaging, queries, message relaying, and several other useful tools and
                             concepts. He guides you through how these functions work together to create a flexible and
                             powerful digital communication mode.</p>
-                        <p class="video-text-18"><span class="alert">Note:</span> This is a 27 minute video.</p>
+                        <p class="video-text-18"><span class="text-alert">Note:</span> This is a 27 minute video.</p>
                     </div>
                 </div>
                 <br>
                 <br>
                 <div class="banner shadow">This Video Showcases The Group Messaging Feature Released in Version 2.3.1
                 </div>
-                <div class="video-box">
-                    <iframe width="560" height="315" class="shadow-video"
-                        src="https://www.youtube.com/embed/eE84BgTNSVA"
-                        title="Next-Level JS8CALL Features &amp; Updates" frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    <div>
+                <div class="row gx-5 video-box">
+                    <div class="col-xs-12 col-md-6 col-lg-5">
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                    src="https://www.youtube.com/embed/eE84BgTNSVA"
+                                    title="Next-Level JS8CALL Features &amp; Updates" frameborder="0"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-7">
                         <h2 class="video-text-18">Next-Level JS8CALL Features & Updates</h2>
                         <p class="video-text-44">Josh Nass and friends (Mike and Jason) do a great job of explaining and
                             demonstrating group messaging in JS8Call. This new feature adds a Group Message Inbox,
                             allowing operators to store messages for a group and letting any station following that
                             group retrieve them later—even if the original sender is offline—making group coordination
                             simpler and more reliable.</p>
-                        <p class="video-text-18"><span class="alert">Note:</span> This is a 1 hour, and 30 minute video.
+                        <p class="video-text-18"><span class="text-alert">Note:</span> This is a 1 hour, and 30 minute video.
                         </p>
                     </div>
                 </div>
@@ -145,6 +166,7 @@ position: relative;
                 <br>
             </div>
         </div>
+    </div>
 </body>
 
 </html>

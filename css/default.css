@@ -24,6 +24,34 @@
     font-style: normal;
 }
 
+.navbar
+{
+    background-color: #e0e0e0;
+}
+
+.navbar-nav
+{
+    padding-left: 4px;
+}
+
+.navbar .nav-item a
+{
+    color: #000;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.navbar .nav-item a.active
+{
+    font-weight: bold;
+    color: darkblue;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm .navbar-nav {
+        gap: 8px;
+    }
+}
+
 /* Full-screen fixed background video */
 #bg-video {
     position: fixed;
@@ -32,7 +60,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;       /* Ensures full coverage with cropping */
-    z-index: -1;             /* Sends video behind everything */
+    z-index: -9999;             /* Sends video behind everything */
     background: black;       /* Fallback background */
 }
 #video-overlay {
@@ -42,7 +70,7 @@
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.2); /* 0.1 = 90% opacity video */
-    z-index: 0;
+    z-index: -9998;
 }
 .menu {
     position: relative;
@@ -57,38 +85,26 @@
     font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 16px;
 }
-/* Welcome Outer div */
-.welcome-outer-box {
-    width: 100%;
-    height: 740px;
-    position: relative;
-    display: flex;
-    justify-content: center;     /* center left & right */
-    align-items: center;         /* center up & down */
+
+.content-container
+{
+    background-color: #fff;
+    padding-top: 1em;
 }
-/* Welcome Inner div */
-.welcome-inner-box {
-    width: 900px;
-    height: 410px;
+
+#hero
+{
+    background: transparent;
+}
+
+#welcome
+{
     background-color: rgba(242, 242, 255, 0.8); /* 70% opacity */
-    /*border-radius: 10px; /* optional */
-    box-sizing:border-box;
-    padding:40px;
-    color:#000000;
     backdrop-filter:blur(6px);
+    padding: 40px;
+    margin: 10vw 0;
 }
-.features-outer-box {
-    width: 100%;
-    background-color: #ffffff;
-    position: relative;
-    display: flex;
-    justify-content: center;     /* center left & right */
-}
-.features-inner-box {
-    width: 1080px;
-    margin: 0 auto;
-    height: auto;
-    padding:40px;
+#features {
     color: #666;
 }
 /* Sample content styling */
@@ -99,11 +115,6 @@
     text-align: right;
     z-index: 1;
     padding: 0px 60px 30px 0px;
-}
-div.video-box{
-    display: flex; /* Enables Flexbox */
-    align-items: center; /* Vertically center align-items */
-    gap: 40px; /* Spacing between the video and the text */
 }
 .video-box > video {
     flex-shrink: 0; /* Prevent iframe from shrinking */
@@ -120,12 +131,7 @@ div.video-box{
 }
 .video-box img {
     border: 0;
-    flex-shrink: 0; /* Prevent iframe from shrinking */
-    align-items: center; /* Vertically center align-items */
-    width: 360px; /* Optional, since width/height are set in HTML */
-    height: 203px; /* Optional, since width/height are set in HTML */
     box-shadow: 8px 8px 20px #888888;
-    margin: 12px 12px 12px 0;
 }
 .video-text-18{
     color: #183871;
@@ -156,12 +162,6 @@ div.video-box{
         max-width: 700px;
         box-shadow: 8px 8px 20px #888888;
 }
-.tools img{
-    border: 0;
-    flex-shrink: 0; /* Prevent iframe from shrinking */
-    align-items: center; /* Vertically center align-items */
-    width: 640px; /* Optional, since width/height are set in HTML */
-}
 .tools-text-18 {
     color: #183871;
     flex: 1; /* Takes up the remaining space */
@@ -178,7 +178,7 @@ div.video-box{
     display: block;      /* REQUIRED for margin:auto centering */
     margin: 0 auto;      /* centers horizontally */
 }
-.alert { color: #aa0033; font-weight: bold }
+.text-alert { color: #aa0033; font-weight: bold }
 html, body { font-family: Roboto, system-ui, -apple-system, sans-serif; font-weight: 400; font-style: normal; font-size: 16px; color: #202020; margin: 0; padding: 0; width: 100%; height: 100%; }
 h1 { font-family: "Roboto Slab", sans-serif;  font-weight: 900; }
 h2 { font-family: "Roboto Slab", sans-serif;  font-weight: 900; }
